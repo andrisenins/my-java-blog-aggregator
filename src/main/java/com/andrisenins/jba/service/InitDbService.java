@@ -1,9 +1,11 @@
 package com.andrisenins.jba.service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +19,7 @@ import com.andrisenins.jba.repository.ItemRepository;
 import com.andrisenins.jba.repository.RoleRepository;
 import com.andrisenins.jba.repository.UserRepository;
 
+@Transactional
 @Service
 public class InitDbService {
 
@@ -60,10 +63,14 @@ public class InitDbService {
         item1.setBlog(blogJavavids);
         item1.setTitle("first");
         item1.setLink("http://www.javavids.com");
+        item1.setPublishedDate(new Date());
+        itemRepository.save(item1);
         
         Item item2 = new Item();
         item2.setBlog(blogJavavids);
         item2.setTitle("second");
         item2.setLink("http://www.javavids.com");
+        item2.setPublishedDate(new Date());
+        itemRepository.save(item2);
     }
 }
