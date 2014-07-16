@@ -3,10 +3,10 @@ my-java-blog-aggregator
 
 My training java blog aggregator inspired by Jiri Pinkas videos on the youtube.
 
-Tutorials 1-9
+Tutorials 1-13
 
 next
-https://www.youtube.com/watch?v=NveANoe_Zog&index=10&list=PLmcxdcWPhFqMq2BctGktOcIJKUw23wJeh
+https://www.youtube.com/watch?v=6LewRDc6DPc&list=PLmcxdcWPhFqMq2BctGktOcIJKUw23wJeh&index=14
 
 #Stuff to read
 Spring reference documentation
