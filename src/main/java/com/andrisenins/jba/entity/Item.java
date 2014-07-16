@@ -68,4 +68,12 @@ public class Item {
     public void setLink(String link) {
         this.link = link;
     }
+
+    public Blog getBlog() {
+        return blog;
+    }
+
+    public void setBlog(Blog blog) {
+        this.blog = blog;
+    }
 }
