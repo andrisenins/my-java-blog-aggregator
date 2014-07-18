@@ -8,12 +8,12 @@ Tutorials 1-15
 next
 https://www.youtube.com/watch?v=Xvn_oJWAtyc&list=PLmcxdcWPhFqMq2BctGktOcIJKUw23wJeh&index=16
 
-#Stuff to read
+##Stuff to read
 Spring reference documentation
     http://docs.spring.io/spring/docs/4.0.6.RELEASE/spring-framework-reference/htmlsingle/
     
-#Bootstrap templates
+##Bootstrap templates
     http://getbootstrap.com/getting-started/
     
-#Used template
+##Used template
     http://getbootstrap.com/examples/navbar/
