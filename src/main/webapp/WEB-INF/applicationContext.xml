@@ -39,4 +39,6 @@
 
 <jpa:repositories base-package="com.andrisenins.jba.repository" />
 
+<import resource="security.xml"/>
+
 </beans>
