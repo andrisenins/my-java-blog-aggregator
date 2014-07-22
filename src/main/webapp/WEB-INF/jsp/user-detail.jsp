@@ -4,6 +4,8 @@
 <%@ include file="../layout/taglib.jsp" %>
 
 <h1>${user.name}</h1>
+<h1>${user.password}</h1>
+<h1>${user.email}</h1>
 
 <c:forEach items="${user.blogs}" var="blog">
 	<h2>${blog.name}</h2>
