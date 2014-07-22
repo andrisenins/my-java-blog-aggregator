@@ -23,6 +23,8 @@ public class User {
     private String email;
 
     private String password;
+    
+    private Boolean enabled;
 
     @ManyToMany
     @JoinTable
@@ -61,6 +63,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
     }
 
     public List<Role> getRoles() {
