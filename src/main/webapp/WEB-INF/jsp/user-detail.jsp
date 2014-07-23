@@ -68,7 +68,7 @@
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
     <c:forEach items="${user.blogs}" var="blog">
-        <li><a href="#blog_${blog.id}" role="tab" data-toggle="tab">${blog.name}</a></li>
+        <li><a href="#blog_${blog.id}" role="tab" data-toggle="tab"><c:out value="${blog.name}" /></a></li>
     </c:forEach>
 </ul>
 
@@ -89,8 +89,8 @@
                 <tbody>
                     <c:forEach items="${blog.items}" var="item">
                         <tr>
-                            <td>${item.title}</td>
-                            <td>${item.link}</td>
+                            <td><c:out value="${item.title}"/></td>
+                            <td><c:out value="${item.link}"/></td>
                         </tr>
                     </c:forEach>
                 </tbody>
