@@ -25,13 +25,13 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
-    
+
     @Autowired
     private RoleRepository roleRepository;
-    
+
     @Autowired
     private BlogRepository blogRepository;
-    
+
     @Autowired
     private ItemRepository itemRepository;
 
@@ -48,23 +48,33 @@ public class UserService {
         User user = findOne(id);
         List<Blog> blogs = blogRepository.findByUser(user);
         for (Blog blog : blogs) {
-            List<Item> items = itemRepository.findByBlog(blog, new PageRequest(0, 10, Direction.DESC, "publishedDate"));
+            List<Item> items = itemRepository.findByBlog(blog, new PageRequest(
+                    0, 10, Direction.DESC, "publishedDate"));
             blog.setItems(items);
         }
         user.setBlogs(blogs);
         return user;
     }
 
+    public Object findOneWithBlogs(String name) {
+        User user = userRepository.findByName(name);
+        return findOneWithBlogs(user.getId());
+    }
+
     public void save(User user) {
         user.setEnabled(true);
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         user.setPassword(encoder.encode(user.getPassword()));
-        
+
         List<Role> roles = new ArrayList<Role>();
         roles.add(roleRepository.findByName("ROLE_USER"));
         user.setRoles(roles);
-        
+
         userRepository.save(user);
+    }
+
+    public void delete(int id) {
+        userRepository.delete(id);
     }
 
 }
