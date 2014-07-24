@@ -63,11 +63,12 @@
               </security:authorize>
             </ul>
           </div><!--/.nav-collapse -->
+          
         </div><!--/.container-fluid -->
+       
       </div>
-
     <tiles:insertAttribute name="body" />
-
+    
     <br />
     <br />
 

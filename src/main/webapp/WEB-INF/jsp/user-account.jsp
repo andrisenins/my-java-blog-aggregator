@@ -3,8 +3,6 @@
 
 <%@ include file="../layout/taglib.jsp"%>
 
-<h1>${user.name}</h1>
-
 <!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg" data-toggle="modal"
     data-target="#myModal">New blog</button>
