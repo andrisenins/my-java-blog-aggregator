@@ -7,7 +7,7 @@
 <button class="btn btn-primary btn-lg" data-toggle="modal"
     data-target="#myModal">New blog</button>
 
-<form:form commandName="blog" cssClass="form-horizontal">
+<form:form commandName="blog" cssClass="form-horizontal blogForm">
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel" aria-hidden="true">
@@ -60,6 +60,26 @@
             e.preventDefault();
             $("#modalRemove .removeBtn").attr("href", $(this).attr("href"));
             $("#modalRemove").modal();
+        });
+        
+        //Validation
+        $(".blogForm").validate({
+            rules : {
+              name : {
+                required : true,
+                minlength : 3
+              },
+              url : {
+                required : true,
+                url : true
+              }
+            },
+              highlihgt : function(element) {
+                $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+              },
+              unhighlihgt : function(element) {
+                $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+              }
         });
     });
 </script>
