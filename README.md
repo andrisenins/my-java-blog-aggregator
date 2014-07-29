@@ -3,10 +3,10 @@ my-java-blog-aggregator
 
 My training java blog aggregator inspired by Jiri Pinkas videos on the youtube.
 
-Tutorials 1-41
+Tutorials 1-42
 
-next
-https://www.youtube.com/watch?v=aRhDGKEtLp8&list=PLmcxdcWPhFqMq2BctGktOcIJKUw23wJeh&index=42
+next at 2:46
+https://www.youtube.com/watch?v=T3Ezfup-uLs&list=PLmcxdcWPhFqMq2BctGktOcIJKUw23wJeh&index=44
 
 highlighting from tutorial 38 not working at the moment.
 
