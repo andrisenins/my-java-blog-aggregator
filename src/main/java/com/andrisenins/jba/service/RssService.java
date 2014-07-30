@@ -26,7 +26,7 @@ import com.andrisenins.jba.rss.TRssItem;
 
 @Service
 public class RssService {
-
+    
     public List<Item> getItems(File file) throws RssException {
         return getItems(new StreamSource(file));
     }
