@@ -19,3 +19,7 @@ Spring reference documentation
     
 ##Used template
     http://getbootstrap.com/examples/navbar/
+
+##Setting up Heroku
+info to run app on JVM 1.7 instead of default 1.6
+https://devcenter.heroku.com/articles/add-java-version-to-an-existing-maven-app
